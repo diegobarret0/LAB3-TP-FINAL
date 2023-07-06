@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Index.html */
+.navbar-brand img{
+    height: 3rem;
+    width: 12rem;
+}
+.carousel-item{
+    height: 60vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:992px){
+    .carousel-item{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:576px){
+    .carousel-item{
+        height: 30vh;
+    }
+}
+
+/* about-us.html */
+.about-us-start{
+    height: 40vh;
+    background-image: url(/images/About-us/values-movie-poster-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:992px){
+    .about-us-start{
+        background-image: url(/images/About-us/values-movie-poster-mobile.jpg);
+    }
+}
