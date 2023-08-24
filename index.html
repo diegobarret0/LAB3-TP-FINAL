@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,13 +24,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-2">
               <li class="nav-item">
-                <a class="nav-link" href="html/about-us.html">Nosotros</a>
+                <a class="nav-link" href="html/xama-home.html">XAMA home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">XAMA home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="html/light.html">Iluminacion</a></li>
+                  <li><a class="dropdown-item" href="#">Gardin</a></li>
+                  <li><a class="dropdown-item" href="#">Puertas y ventanas</a></li>
+                  <li><a class="dropdown-item" href="#">Climatizacion</a></li>
+                  <li><a class="dropdown-item" href="#">Seguridad</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Solicitar presupuesto</a>
@@ -48,16 +56,16 @@
         <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner carouselImage-1">
         <div class="carousel-item active">
-          <img src="images/Carrouser/smart-house-1.jpeg" class="d-block w-100" alt="smart-house-1">
+          <img src="images/Carrouser/smart-house-4.jpg" class="d-block imgC1" alt="smart-house-1">
           <div class="carousel-caption d-md-block">
             <h5>Nosotros</h5>
             <p>Descubre quienes somos y nuestros objetivos</p>
-            <p><a href="html/about-us.html" class="btn btn-warning mt-3">Ver mas</a></p>
+            <p><a href="html/about-us.html" class="btn btn-warning mt-2">Ver mas</a></p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carouselImage-2">
           <img src="images/Carrouser/smart-house-2.jpg" class="d-block w-100" alt="smart-house-2">
           <div class="carousel-caption d-md-block">
             <h5>Productos y servicios</h5>
@@ -65,7 +73,7 @@
             <p><a href="#" class="btn btn-warning mt-3" id="prod-0">Ver mas</a></p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carouselImage-3">
           <img src="images/Carrouser/smart-house-3.jpeg" class="d-block w-100" alt="smart-house-3">
           <div class="carousel-caption d-md-block">
             <h5>Solicitar presupuesto</h5>
@@ -84,7 +92,60 @@
       </button>
     </div>
 
-    <footer class="bg-light text-dark pt-5 pb-4">
+    <div class="services">
+      <h1>Experienca XAMA</h1>
+    </div>
+    
+    <div class="arrow">
+      <span class="arrow-line-1"></span>
+      <span class="arrow-line-2"></span>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#"><img src="/images/Swiper/smart-light.png" alt="smart-light"></a>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/Swiper/smart-garden.png" alt="smart-garden">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/Swiper/smart-door.png" alt="smart-door">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/Swiper/security.png" alt="security">
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="/images/Swiper/temperature.png" alt="temperature"></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="titles">
+      <div class="row-1">
+        <div class="why-xama">
+          <h2>Por que XAMA</h2>
+          <a href="#">Descubre...</a>
+        </div>
+        <div class="us">
+          <h2>Nosotros</h2>
+          <a href="/html/about-us.html">Ver mas...</a>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="work-with-us">
+          <h2>Trabaja con nosotros</h2>
+          <a href="#">Ver mas...</a>
+        </div>
+        <div class="contact">
+          <h2>Contacto</h2>
+          <a href="#">Ver mas...</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-dark pt-3 pb-4">
       <div class="container text-center text-md-start">
         <div class="row text-center text-md-start">
 
@@ -97,30 +158,30 @@
                 Adipisci nisi rem dicta quo quasi. 
                 Saepe vero laboriosam, tenetur est explicabo deleniti delectus iure.
               </p>
-            </div>
-            <div class="col-lg-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Dejanos ayudarte</h5>
-              <hr class="mb-4">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Nulla error porro distinctio fuga, hic temporibus. 
-                Adipisci nisi rem dicta quo quasi. 
-                Saepe vero laboriosam, tenetur est explicabo deleniti delectus iure.
-              </p>
-            </div>
-            <div class="col-lg-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Contacto</h5>
-              <hr class="mb-4">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Nulla error porro distinctio fuga, hic temporibus. 
-                Adipisci nisi rem dicta quo quasi. 
-                Saepe vero laboriosam, tenetur est explicabo deleniti delectus iure.
-              </p>
-            </div>
+          </div>
+          <div class="col-lg-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Dejanos ayudarte</h5>
+            <hr class="mb-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Nulla error porro distinctio fuga, hic temporibus. 
+              Adipisci nisi rem dicta quo quasi. 
+              Saepe vero laboriosam, tenetur est explicabo deleniti delectus iure.
+            </p>
+          </div>
+          <div class="col-lg-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">Contacto</h5>
+            <hr class="mb-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Nulla error porro distinctio fuga, hic temporibus. 
+              Adipisci nisi rem dicta quo quasi. 
+              Saepe vero laboriosam, tenetur est explicabo deleniti delectus iure.
+            </p>
           </div>
         </div>
-      </footer>    
+      </div>
+    </footer>    
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

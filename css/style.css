@@ -3,17 +3,36 @@
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
-/* Index.html */
+body {
+    position: relative;
+    background-color: #fbfbfb;
+}
+/* Navbar */
 .navbar-brand img{
     height: 3rem;
     width: 12rem;
 }
+/* index */
+/* Corrouser */
 .carousel-item{
-    height: 60vh;
+    height: 50vh;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10rem;
+}
+
+.carousel-caption p{
+    margin-bottom: 5px;
 }
 
 .carousel-item img{
     height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,12 +42,183 @@
     .carousel-item{
         height: 50vh;
     }
+    .carousel-item img{
+        min-width: 800px;
+    }
 }
 
 @media screen and (max-width:576px){
     .carousel-item{
-        height: 30vh;
+        height: 35vh;
     }
+    .carousel-caption{
+        font-size: small;
+    }
+    .carousel-item img{
+        min-width: 500px;
+    }
+}
+
+/* Swiper */
+.swiper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+.swiper-slide {
+    background: white;
+    margin-right: 0px !important;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:992px){
+    .swiper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .swiper{
+        width: 100%;
+        height: 180px;
+    }
+}
+/* H1 */
+.services{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h1{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: rgb(81, 80, 80);
+}
+/* Arrow */
+.arrow{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow span{
+    width: 8px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgba(0, 135, 197);
+    margin: 6px;
+    animation: move 1.5s infinite ease-in-out;
+}
+
+.arrow .arrow-line-1{
+    transform: rotate(-45deg);
+}
+
+.arrow .arrow-line-2{
+    transform: rotate(45deg);
+}
+
+@keyframes move{
+    0%{margin-top: 0;}
+    50%{margin-top: 50px;}
+    100%{margin-top: 0;}
+}
+
+@media screen and (max-width:576px){
+    .arrow{
+        height: 40px;
+    }
+    .arrow span{
+        width: 4px;
+        height: 25px;
+    }
+    @keyframes move {
+        0%{margin-top: 0;}
+        50%{margin-top: 50px;}
+        100%{margin-top: 0;}
+    }
+}
+
+/* Titles */
+.titles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titles .row-1,.row-2{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titles .why-xama,.us,.work-with-us,.contact{
+    display: flex;
+    height: 30vh;
+    width: 50%;
+    margin: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles .why-xama{
+    background-image: url(/images/Index/why-xama.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.titles .us{
+    background-image: url(/images/Index/us.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.work-with-us{
+    background-image: url(/images/Index/work-with-us.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact{
+    background-image: url(/images/Index/contac.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.titles h2{
+    font-weight: bold;
+    color:rgb(39, 149, 227);
 }
 
 /* about-us.html */
@@ -44,4 +234,184 @@
     .about-us-start{
         background-image: url(/images/About-us/values-movie-poster-mobile.jpg);
     }
+}
+
+/* xama-home.html */
+.title{
+    display: grid;
+    place-items: center;
+}
+.title h1{ 
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: rgb(81, 80, 80);
+}
+
+.separator{
+    width: 100%;
+}
+
+.separator .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.separator .line span{
+    width: 2px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgba(0, 135, 197);
+    margin: 20px 0px 10px 0px;
+}
+
+.line-v{
+    transform: rotate(0deg);
+}
+
+.hour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .conteiner{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .content-img{
+    width: 50%;
+}
+
+.content img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-description{
+    width: 50%;
+    flex-direction: column;
+}
+
+.description-img{
+    flex-direction: row;
+}
+
+.description-img img{
+    height: 75px;
+    width: 75px;
+}
+.description-text{
+    text-align: center;
+    margin: 2px 10px 2px 10px;
+}
+
+@media screen and (max-width:992px){
+    .content{
+        height: 55vh;
+    }
+    .content .conteiner{
+        flex-direction: column;
+    }
+    .content .content-img{
+        width: 100%;
+    }
+    .content .content-description{
+        width: 100%;
+    }
+}
+
+/* light.html */
+.products{
+    flex-direction: column;
+    width: 100%;
+}
+.products-conteiner{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.product{
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.product:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+
+.product-img{
+    height: 300px;
+    width: 300px;
+}
+
+@media screen and (max-width:576px){
+    .products-conteiner{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+    }
+}
+
+/* modal */
+#modal{
+    padding: 1em;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#modal div{
+    flex-direction: column;
+}
+
+/* Genaral class */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-style{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(81, 80, 80);
+}
+
+.h2-style{
+    text-align: center;
+    font-size: 26px;
+    color: rgb(81, 80, 80);
+    font-weight: 300;
+}
+
+.h1-style{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(81, 80, 80);
+    font-weight: 300;
 }
